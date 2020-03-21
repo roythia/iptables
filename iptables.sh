@@ -65,9 +65,6 @@ iptables -A OUTPUT -d 172.25.101.18 -j DROP
 # Block 172.25.101.21
 iptables -A OUTPUT -d 172.25.101.21 -j DROP
 
-# Block 172.25.101.27
-iptables -A OUTPUT -d 172.25.101.27 -j DROP
-
 # Block 172.25.200.0/22
 iptables -A OUTPUT -d 172.25.200.0/22 -j DROP
 
