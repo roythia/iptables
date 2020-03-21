@@ -78,6 +78,9 @@ iptables -A OUTPUT -p tcp -d 172.25.101.21 --dport 443 -j DROP
 iptables -A OUTPUT -p tcp -d 172.25.101.27 --dport 80 -j DROP
 iptables -A OUTPUT -p tcp -d 172.25.101.27 --dport 443 -j DROP
 
+# Block 172.25.200.0/22
+iptables -A OUTPUT -d 172.25.200.0/22 -j DROP
+
 # Save iptables config to /etc/sysconfig/iptables
 service iptables save
 
