@@ -39,50 +39,40 @@ iptables -A OUTPUT -m string --string "shopee.ph" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "taobao.com" --algo bm --to 65535 -j DROP
 
 # Block 172.25.101.10
-iptables -A OUTPUT -p tcp -d 172.25.101.10 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.10 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.10 -j DROP
 
 # Block 172.25.101.20
-iptables -A OUTPUT -p tcp -d 172.25.101.20 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.20 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.20 -j DROP
 
 # Block 172.25.101.40
-iptables -A OUTPUT -p tcp -d 172.25.101.40 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.40 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.40 -j DROP
 
 # Block 172.25.101.60
-iptables -A OUTPUT -p tcp -d 172.25.101.60 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.60 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.60 -j DROP
 
 # Block 172.25.101.211
-iptables -A OUTPUT -p tcp -d 172.25.101.211 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.211 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.211 -j DROP
 
 # Block 172.25.101.26
-iptables -A OUTPUT -p tcp -d 172.25.101.26 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.26 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.26 -j DROP
 
 # Block 172.25.101.11
-iptables -A OUTPUT -p tcp -d 172.25.101.11 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.11 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.11 -j DROP
 
 # Block 172.25.101.18
-iptables -A OUTPUT -p tcp -d 172.25.101.18 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.18 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.18 -j DROP
 
 # Block 172.25.101.21
-iptables -A OUTPUT -p tcp -d 172.25.101.21 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.21 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.21 -j DROP
 
 # Block 172.25.101.27
-iptables -A OUTPUT -p tcp -d 172.25.101.27 --dport 80 -j DROP
-iptables -A OUTPUT -p tcp -d 172.25.101.27 --dport 443 -j DROP
+iptables -A OUTPUT -d 172.25.101.27 -j DROP
 
 # Block 172.25.200.0/22
 iptables -A OUTPUT -d 172.25.200.0/22 -j DROP
 
-# Save iptables config to /etc/sysconfig/iptables
-service iptables save
-
 # show iptables list
 iptables -L -n --line-numbers
+
+# Save iptables config to /etc/sysconfig/iptables
+service iptables save
