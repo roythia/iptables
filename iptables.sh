@@ -8,6 +8,9 @@ iptables -Z
 # Block youtube.com
 iptables -A OUTPUT -m string --string "youtube.com" --algo bm --to 65535 -j DROP
 
+# Block googlevideo.com
+iptables -A OUTPUT -m string --string "googlevideo.com" --algo bm --to 65535 -j DROP
+
 # Block facebook.com
 iptables -A OUTPUT -m string --string "facebook.com" --algo bm --to 65535 -j DROP
 
