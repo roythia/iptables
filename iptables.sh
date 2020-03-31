@@ -29,6 +29,9 @@ iptables -A OUTPUT -m string --string "spotify.com" --algo bm --to 65535 -j DROP
 # Block netflix.com
 iptables -A OUTPUT -m string --string "netflix.com" --algo bm --to 65535 -j DROP
 
+# Block utorrent.com
+iptables -A OUTPUT -m string --string "utorrent.com" --algo bm --to 65535 -j DROP
+
 # Block Lazada
 iptables -A OUTPUT -m string --string "lazada.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "lazada.ph" --algo bm --to 65535 -j DROP
