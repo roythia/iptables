@@ -44,6 +44,17 @@ iptables -A OUTPUT -m string --string "shopee.ph" --algo bm --to 65535 -j DROP
 # Block Taobao
 iptables -A OUTPUT -m string --string "taobao.com" --algo bm --to 65535 -j DROP
 
+# Block battle.net
+iptables -A OUTPUT -m string --string "battle.net" --algo bm --to 65535 -j DROP
+
+# Block blizzard.com
+iptables -A OUTPUT -m string --string "blizzard.com" --algo bm --to 65535 -j DROP
+
+# Block Steam
+iptables -A OUTPUT -m string --string "steampowered.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "steamgames.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "steamgames.net" --algo bm --to 65535 -j DROP
+
 # Block 172.25.101.10
 iptables -A OUTPUT -d 172.25.101.10 -j DROP
 
