@@ -55,6 +55,16 @@ iptables -A OUTPUT -m string --string "steampowered.com" --algo bm --to 65535 -j
 iptables -A OUTPUT -m string --string "steamgames.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "steamgames.net" --algo bm --to 65535 -j DROP
 
+# Block Garena
+iptables -A OUTPUT -m string --string "garena.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "garena.ph" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "garena.sg" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "garena.tw" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "garena.my" --algo bm --to 65535 -j DROP
+
+# Block mobilelegends.com
+iptables -A OUTPUT -m string --string "mobilelegends.com" --algo bm --to 65535 -j DROP
+
 # Block 172.25.101.10
 iptables -A OUTPUT -d 172.25.101.10 -j DROP
 
