@@ -84,13 +84,13 @@ iptables -A OUTPUT -d 172.25.101.211 -j DROP
 iptables -A OUTPUT -d 172.25.101.26 -j DROP
 
 # Block 172.25.101.11
-iptables -A OUTPUT -d 172.25.101.11 -j DROP
+#iptables -A OUTPUT -d 172.25.101.11 -j DROP
 
 # Block 172.25.101.18
 iptables -A OUTPUT -d 172.25.101.18 -j DROP
 
 # Block 172.25.101.21
-iptables -A OUTPUT -d 172.25.101.21 -j DROP
+#iptables -A OUTPUT -d 172.25.101.21 -j DROP
 
 # Block 172.25.200.0/22
 iptables -A OUTPUT -d 172.25.200.0/22 -j DROP
