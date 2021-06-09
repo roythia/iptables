@@ -83,6 +83,8 @@ iptables -A OUTPUT -m string --string "ntservicepack.microsoft.com" --algo bm --
 iptables -A OUTPUT -m string --string "stats.microsoft.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "windowsupdate.nsatc.net" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "11.au.download.windowsupdate.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "au.download.windowsupdate.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "117.18.232.240" --algo bm --to 65535 -j DROP
 
 # Block 172.25.101.10
 iptables -A OUTPUT -d 172.25.101.10 -j DROP
