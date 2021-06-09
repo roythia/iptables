@@ -7,12 +7,14 @@ iptables -Z
 
 # Block youtube.com
 iptables -A OUTPUT -m string --string "youtube.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "ytimg.com" --algo bm --to 65535 -j DROP
 
 # Block googlevideo.com
 iptables -A OUTPUT -m string --string "googlevideo.com" --algo bm --to 65535 -j DROP
 
 # Block facebook.com
 iptables -A OUTPUT -m string --string "facebook.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "fbcdn.net" --algo bm --to 65535 -j DROP
 
 # Block messenger.com
 iptables -A OUTPUT -m string --string "messenger.com" --algo bm --to 65535 -j DROP
@@ -22,12 +24,18 @@ iptables -A OUTPUT -m string --string "instagram.com" --algo bm --to 65535 -j DR
 
 # Block twitter.com
 iptables -A OUTPUT -m string --string "twitter.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "twimg.com" --algo bm --to 65535 -j DROP
 
 # Block spotify.com
 iptables -A OUTPUT -m string --string "spotify.com" --algo bm --to 65535 -j DROP
 
+# Block reddit.com
+iptables -A OUTPUT -m string --string "reddit.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "redditstatic.com" --algo bm --to 65535 -j DROP
+
 # Block netflix.com
 iptables -A OUTPUT -m string --string "netflix.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "nflxso.net" --algo bm --to 65535 -j DROP
 
 # Block utorrent.com
 iptables -A OUTPUT -m string --string "utorrent.com" --algo bm --to 65535 -j DROP
@@ -67,18 +75,13 @@ iptables -A OUTPUT -m string --string "mobilelegends.com" --algo bm --to 65535 -
 
 # Block Windows Update
 iptables -A OUTPUT -m string --string "windowsupdate.microsoft.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "windowsupdate.microsoft.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "windowsupdate.microsoft.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "update.microsoft.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "update.microsoft.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "windowsupdate.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "download.windowsupdate.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "download.microsoft.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "download.windowsupdate.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "wustat.windows.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "ntservicepack.microsoft.com" --algo bm --to 65535 -j DROP
 iptables -A OUTPUT -m string --string "stats.microsoft.com" --algo bm --to 65535 -j DROP
-iptables -A OUTPUT -m string --string "stats.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "windowsupdate.nsatc.net" --algo bm --to 65535 -j DROP
 
 # Block 172.25.101.10
 iptables -A OUTPUT -d 172.25.101.10 -j DROP
