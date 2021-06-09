@@ -65,6 +65,21 @@ iptables -A OUTPUT -m string --string "garena.my" --algo bm --to 65535 -j DROP
 # Block mobilelegends.com
 iptables -A OUTPUT -m string --string "mobilelegends.com" --algo bm --to 65535 -j DROP
 
+# Block Windows Update
+iptables -A OUTPUT -m string --string "windowsupdate.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "windowsupdate.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "windowsupdate.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "update.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "update.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "windowsupdate.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "download.windowsupdate.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "download.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "download.windowsupdate.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "wustat.windows.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "ntservicepack.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "stats.microsoft.com" --algo bm --to 65535 -j DROP
+iptables -A OUTPUT -m string --string "stats.microsoft.com" --algo bm --to 65535 -j DROP
+
 # Block 172.25.101.10
 iptables -A OUTPUT -d 172.25.101.10 -j DROP
 
