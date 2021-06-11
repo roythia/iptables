@@ -116,6 +116,9 @@ iptables -A OUTPUT -d 172.25.101.18 -j DROP
 # Block 172.25.200.0/22
 iptables -A OUTPUT -d 172.25.200.0/22 -j DROP
 
+# Test Block
+iptables -I INPUT -s 180.190.85.191 -j DROP
+
 # show iptables list
 iptables -L -n --line-numbers
 
