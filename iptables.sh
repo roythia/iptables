@@ -119,16 +119,12 @@ iptables -A OUTPUT -d 172.25.200.0/22 -j DROP
 # Block 112.204.80.58
 iptables -I INPUT -s 112.204.80.58 -j DROP
 
-# Block 136.158.28.86
-iptables -I INPUT -s 136.158.28.86 -j DROP
-
 # Block 136.158.83.127
 iptables -I INPUT -s 136.158.83.127 -j DROP
 
 # Block 136.158.83.59
 iptables -I INPUT -s 136.158.83.59 -j DROP
 
-iptables -I INPUT -s 136.158.83.127 -j DROP
 iptables -I INPUT -s 49.144.141.184 -j DROP
 iptables -I INPUT -s 136.158.83.47 -j DROP
 iptables -I INPUT -s 124.106.141.184 -j DROP
@@ -137,7 +133,6 @@ iptables -I INPUT -s 136.158.28.20 -j DROP
 iptables -I INPUT -s 112.199.68.14 -j DROP
 iptables -I INPUT -s 136.158.29.56 -j DROP
 iptables -I INPUT -s 136.158.28.46 -j DROP
-iptables -I INPUT -s 136.158.28.86 -j DROP
 iptables -I INPUT -s 136.158.28.138 -j DROP
 iptables -I INPUT -s 136.158.32.246 -j DROP
 iptables -I INPUT -s 136.158.32.63 -j DROP
