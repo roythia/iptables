@@ -122,8 +122,11 @@ iptables -I INPUT -s 112.204.80.58 -j DROP
 # Block 136.158.28.86
 iptables -I INPUT -s 136.158.28.86 -j DROP
 
-# Block 136.158.28.86
+# Block 136.158.83.127
 iptables -I INPUT -s 136.158.83.127 -j DROP
+
+# Block 136.158.83.59
+iptables -I INPUT -s 136.158.83.59 -j DROP
 
 # show iptables list
 iptables -L -n --line-numbers
