@@ -128,6 +128,29 @@ iptables -I INPUT -s 136.158.83.127 -j DROP
 # Block 136.158.83.59
 iptables -I INPUT -s 136.158.83.59 -j DROP
 
+iptables -I INPUT -s 136.158.83.127 -j DROP
+iptables -I INPUT -s 49.144.141.184 -j DROP
+iptables -I INPUT -s 136.158.83.47 -j DROP
+iptables -I INPUT -s 124.106.141.184 -j DROP
+iptables -I INPUT -s 136.158.83.59 -j DROP
+iptables -I INPUT -s 136.158.28.20 -j DROP
+iptables -I INPUT -s 112.199.68.14 -j DROP
+iptables -I INPUT -s 136.158.29.56 -j DROP
+iptables -I INPUT -s 136.158.28.46 -j DROP
+iptables -I INPUT -s 136.158.28.86 -j DROP
+iptables -I INPUT -s 136.158.28.138 -j DROP
+iptables -I INPUT -s 136.158.32.246 -j DROP
+iptables -I INPUT -s 136.158.32.63 -j DROP
+iptables -I INPUT -s 136.158.32.195 -j DROP
+iptables -I INPUT -s 136.158.32.90 -j DROP
+iptables -I INPUT -s 136.158.32.102 -j DROP
+iptables -I INPUT -s 136.158.32.61 -j DROP
+iptables -I INPUT -s 136.158.32.39 -j DROP
+iptables -I INPUT -s 136.158.33.202 -j DROP
+iptables -I INPUT -s 136.158.32.22 -j DROP
+iptables -I INPUT -s 136.158.33.233 -j DROP
+iptables -I INPUT -s 136.158.32.72 -j DROP
+
 # show iptables list
 iptables -L -n --line-numbers
 
