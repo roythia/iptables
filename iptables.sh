@@ -147,6 +147,8 @@ iptables -I INPUT -s 136.158.33.233 -j DROP
 iptables -I INPUT -s 136.158.32.72 -j DROP
 iptables -I INPUT -s 136.158.28.86 -j DROP
 
+#test git push
+
 # show iptables list
 iptables -L -n --line-numbers
 
