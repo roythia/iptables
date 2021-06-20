@@ -146,7 +146,6 @@ iptables -I INPUT -s 136.158.32.22 -j DROP
 iptables -I INPUT -s 136.158.33.233 -j DROP
 iptables -I INPUT -s 136.158.32.72 -j DROP
 iptables -I INPUT -s 136.158.28.86 -j DROP
-iptables -I INPUT -s 112.211.12.19 -j DROP
 
 # show iptables list
 iptables -L -n --line-numbers
