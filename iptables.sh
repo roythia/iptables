@@ -145,6 +145,7 @@ iptables -I INPUT -s 136.158.32.72 -j DROP
 iptables -I INPUT -s 52.149.194.33 -j DROP
 iptables -I INPUT -s 112.201.163.164 -j DROP
 iptables -I INPUT -s 112.200.32.46 -j DROP
+iptables -I INPUT -s 131.226.67.157 -j DROP
 
 #test git push
 
