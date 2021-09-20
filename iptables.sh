@@ -146,6 +146,20 @@ iptables -I INPUT -s 52.149.194.33 -j DROP
 iptables -I INPUT -s 112.201.163.164 -j DROP
 iptables -I INPUT -s 131.226.67.157 -j DROP
 
+# Dhing Joshua A. Esguerra
+iptables -I INPUT -s 49.144.128.57 -j DROP
+iptables -I INPUT -s 124.106.130.70 -j DROP
+iptables -I INPUT -s 49.144.132.1 -j DROP
+iptables -I INPUT -s 49.144.130.167 -j DROP
+iptables -I INPUT -s 49.144.135.58 -j DROP
+iptables -I INPUT -s 124.106.131.58 -j DROP
+iptables -I INPUT -s 124.106.135.224 -j DROP
+iptables -I INPUT -s 124.106.129.208 -j DROP
+iptables -I INPUT -s 49.144.141.227 -j DROP
+iptables -I INPUT -s 49.144.133.198 -j DROP
+iptables -I INPUT -s 49.144.132.184 -j DROP
+iptables -I INPUT -s 49.144.136.82 -j DROP
+
 #test git push
 
 # show iptables list
