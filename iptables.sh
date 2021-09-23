@@ -119,9 +119,6 @@ iptables -A OUTPUT -d 172.25.200.0/22 -j DROP
 # Block 112.204.80.58
 iptables -I INPUT -s 112.204.80.58 -j DROP
 
-# Block 136.158.83.127
-iptables -I INPUT -s 136.158.83.127 -j DROP
-
 # Block 136.158.83.59
 iptables -I INPUT -s 136.158.83.59 -j DROP
 
