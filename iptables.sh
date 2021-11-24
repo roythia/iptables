@@ -143,6 +143,30 @@ iptables -I INPUT -s 52.149.194.33 -j DROP
 iptables -I INPUT -s 112.201.163.164 -j DROP
 iptables -I INPUT -s 131.226.67.157 -j DROP
 
+iptables -I INPUT -s 180.190.113.38 -j DROP
+iptables -I INPUT -s 180.191.222.245 -j DROP
+iptables -I INPUT -s 180.191.174.59  -j DROP
+iptables -I INPUT -s 180.191.174.4 -j DROP
+iptables -I INPUT -s 180.191.174.159 -j DROP
+iptables -I INPUT -s 180.190.119.71 -j DROP
+iptables -I INPUT -s 180.191.190.130 -j DROP
+iptables -I INPUT -s 180.191.247.215 -j DROP
+iptables -I INPUT -s 180.190.85.84 -j DROP
+iptables -I INPUT -s 180.191.191.192 -j DROP
+iptables -I INPUT -s 180.191.222.49 -j DROP
+iptables -I INPUT -s 180.190.112.141 -j DROP
+iptables -I INPUT -s 180.190.113.49 -j DROP
+iptables -I INPUT -s 180.191.156.36 -j DROP
+iptables -I INPUT -s 180.190.114.87 -j DROP
+iptables -I INPUT -s 180.190.87.16 -j DROP
+iptables -I INPUT -s 180.190.87.178 -j DROP
+iptables -I INPUT -s 180.190.87.61 -j DROP
+iptables -I INPUT -s 180.190.87.178 -j DROP
+iptables -I INPUT -s 180.190.87.238 -j DROP
+iptables -I INPUT -s 180.190.118.97 -j DROP
+iptables -I INPUT -s 180.191.159.202 -j DROP
+iptables -I INPUT -s 180.191.190.47 -j DROP
+
 # Dhing Joshua A. Esguerra
 iptables -I INPUT -s 49.144.128.57 -j DROP
 iptables -I INPUT -s 124.106.130.70 -j DROP
