@@ -180,7 +180,6 @@ iptables -I INPUT -s 49.144.133.198 -j DROP
 iptables -I INPUT -s 49.144.132.184 -j DROP
 iptables -I INPUT -s 49.144.136.82 -j DROP
 iptables -I INPUT -s 175.176.21.205 -j DROP
-iptables -I INPUT -s 112.206.75.21 -j DROP
 
 #test git push
 
